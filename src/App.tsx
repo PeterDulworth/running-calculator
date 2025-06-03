@@ -214,12 +214,13 @@ function App() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    minWidth: '90px'
+    minWidth: '80px',
   }
 
   const inputStyle: React.CSSProperties = {
     ...commonInputStyles,
-    width: '90px',
+    boxSizing: 'border-box',
+    width: '80px',
     padding: '12px 8px',
     textAlign: 'center',
   }
@@ -360,6 +361,18 @@ function App() {
         input:focus, select:focus {
           background-color: #333;
           box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+        }
+        input::-webkit-input-placeholder {
+          text-align: center;
+        }
+        input::-moz-placeholder {
+          text-align: center;
+        }
+        input:-ms-input-placeholder {
+          text-align: center;
+        }
+        input::placeholder {
+          text-align: center;
         }
         button:hover {
           transform: translateY(-1px);
