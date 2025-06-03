@@ -421,14 +421,26 @@ function App() {
             <p style={formLabelStyle}>Select Calculation Mode</p>
             <div style={buttonContainerStyle}>
               <button
-                onClick={() => setMode('timeToPace')}
+                onClick={() => {
+                  setMode('timeToPace');
+                  setHours('');
+                  setMinutes('');
+                  setSeconds('');
+                  setResult(null);
+                }}
                 className={mode === 'timeToPace' ? 'active' : ''}
                 style={buttonStyle(mode === 'timeToPace')}
               >
                 Time → Pace
               </button>
               <button
-                onClick={() => setMode('paceToTime')}
+                onClick={() => {
+                  setMode('paceToTime');
+                  setHours('');
+                  setMinutes('');
+                  setSeconds('');
+                  setResult(null);
+                }}
                 style={modeButtonStyle(mode === 'paceToTime')}
               >
                 Pace → Time

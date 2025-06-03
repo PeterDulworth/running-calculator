@@ -52,3 +52,9 @@ export default tseslint.config({
   },
 })
 ```
+
+## Deploy with GH pages
+```
+npm run deploy
+```
+
