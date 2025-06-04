@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   base: '/running-calculator/', // Updated to match your repository name
+  server: {
+    host: true,
+  }
 })
