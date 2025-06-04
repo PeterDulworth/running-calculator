@@ -1,3 +1,24 @@
+# Running Calculator
+Calculate your pace for a given time and vice versa for common race distances.
+
+Live at: https://peterdulworth.github.io/running-calculator/.
+
+## Deploy with GH pages
+Push your changes to main and run:
+```
+npm run deploy
+```
+
+## Local setup
+First time only:
+```
+npm install
+```
+Then anytime, run with:
+```
+npm run dev
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -51,10 +72,5 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 })
-```
-
-## Deploy with GH pages
-```
-npm run deploy
 ```
 
