@@ -140,9 +140,11 @@ function App() {
         alignItems: 'flex-start',
         justifyContent: 'center',
         padding: '32px 0',
-        minHeight: 'calc(100vh - 120px)',
+        // minHeight: 'calc(100vh - 120px)',
         width: '100%',
-        height: '100vh',
+        height: 'calc(100vh - 48px)',
+        marginTop: '48px',
+        marginBottom: '48px',
         overflowY: 'scroll'
       }}>
         <div style={{ 
